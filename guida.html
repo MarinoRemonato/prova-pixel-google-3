@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richiedi una Guida Turistica - Milano Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Milano Explorer</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mete.html">Mete</a></li>
+                    <li><a href="guida.html" class="active">Richiedi Guida</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Richiedi una Guida Turistica Personalizzata</h2>
+                <p class="text-center" style="max-width: 700px; margin: -20px auto 40px;">
+                    Compila il modulo sottostante per richiedere una guida turistica esperta che ti accompagnerà alla scoperta delle meraviglie di Milano. Ti contatteremo al più presto per definire i dettagli e creare un itinerario su misura per te.
+                </p>
+                <div class="form-container">
+                    <form id="guideForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Numero di Telefono (Opzionale):</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Data della Visita Desiderata:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="participants">Numero di Partecipanti:</label>
+                            <input type="number" id="participants" name="participants" min="1" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferences">Preferenze o Richieste Particolari:</label>
+                            <textarea id="preferences" name="preferences" rows="4" placeholder="Es. Interesse per l'arte moderna, tour enogastronomico, accessibilità per disabili, visita specifica a determinate mete (es. Duomo, Castello, Ultima Cena)..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Invia Richiesta</button>
+                    </form>
+                    <div id="form-message" style="display: none;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Milano Explorer. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
